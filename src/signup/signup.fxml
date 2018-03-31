@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="431.0" prefWidth="468.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="signup.signupController">
+    <stylesheets>
+        <URL value="@signup.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="113.0" layoutY="7.0" prefHeight="34.0" prefWidth="232.0" text="Register For New Member " textFill="#999a84">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="email" layoutX="31.0" layoutY="62.0" prefHeight="41.0" prefWidth="408.0" promptText="Email" style="-fx-background-color: #fffacd;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="password" layoutX="31.0" layoutY="126.0" prefHeight="41.0" prefWidth="408.0" promptText="Password" style="-fx-background-color: #fffacd;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </PasswordField>
+      <PasswordField fx:id="repassword" layoutX="31.0" layoutY="181.0" prefHeight="41.0" prefWidth="408.0" promptText="Retype Password" style="-fx-background-color: #fffacd;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </PasswordField>
+      <CheckBox fx:id="agree" layoutX="30.0" layoutY="303.0" mnemonicParsing="false" onAction="#Agree" prefHeight="41.0" prefWidth="129.0" text="I agree to the" textFill="#999a84">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <Hyperlink fx:id="terms" layoutX="143.0" layoutY="311.0" onAction="#onTerms" text="terms">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Hyperlink>
+      <Label layoutX="210.0" layoutY="358.0" prefHeight="34.0" prefWidth="48.0" text="- OR -" textFill="#999a84">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Hyperlink fx:id="alreadymember" layoutX="30.0" layoutY="392.0" onAction="#alreadyMember" prefHeight="31.0" prefWidth="259.0" text="I have already a membership">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Hyperlink>
+      <TextField fx:id="dob" layoutX="30.0" layoutY="241.0" prefHeight="41.0" prefWidth="408.0" promptText="Date of Birth" style="-fx-background-color: #fffacd;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <JFXButton fx:id="register" layoutX="338.0" layoutY="304.0" onAction="#onRegister" prefHeight="41.0" prefWidth="101.0" style="-fx-background-color: #00ced1;" text="Register" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

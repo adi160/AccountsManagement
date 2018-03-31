@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="355.0" prefWidth="438.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.LoginController">
+    <stylesheets>
+        <URL value="@login.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="99.0" layoutY="14.0" prefHeight="29.0" prefWidth="240.0" text="Sign in to start your session" textFill="#999a84">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="email" layoutX="27.0" layoutY="73.0" prefHeight="42.0" prefWidth="386.0" promptText="Email" style="-fx-background-color: #fffacd;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="password" layoutX="27.0" layoutY="144.0" prefHeight="42.0" prefWidth="386.0" promptText="Password" style="-fx-background-color: #fffacd;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </PasswordField>
+      <CheckBox fx:id="rememberme" layoutX="27.0" layoutY="211.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="167.0" text="Remember me" textFill="#999a84">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </CheckBox>
+      <Label layoutX="187.0" layoutY="262.0" prefHeight="23.0" prefWidth="64.0" text="- OR -" textFill="#999a84">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Hyperlink fx:id="forget" layoutX="27.0" layoutY="285.0" prefHeight="29.0" prefWidth="232.0" text="Forget Password">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink fx:id="signup" layoutX="27.0" layoutY="314.0" onAction="#makeSignup" prefHeight="29.0" prefWidth="232.0" text="Register For New Member">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Hyperlink>
+      <ImageView fitHeight="29.0" fitWidth="43.0" layoutX="378.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Users/adityaraj/Downloads/61152108-user-icon-human-person-symbol-avatar-login-sign-gray-flat-web-icon-on-white-background-vector.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="23.0" fitWidth="23.0" layoutX="381.0" layoutY="154.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Users/adityaraj/Downloads/57016-password-symbol-of-key-silhouette-in-diagonal-position.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="signin" layoutX="312.0" layoutY="220.0" onAction="#makeSignin" prefHeight="42.0" prefWidth="101.0" style="-fx-background-color: #00ced1;" text="Sign In" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="abc" layoutX="234.0" layoutY="291.0" prefHeight="29.0" prefWidth="185.0" text="status" />
+   </children>
+</AnchorPane>
